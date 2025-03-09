@@ -18,5 +18,7 @@ export default {
     glsl(),
     // Restart server on static file change
   ],
-  base: "/",
+  base: process.env.GITHUB_PAGES // この行を追加
+    ? "shader.flag" // この行を追加
+    : "./",
 };
