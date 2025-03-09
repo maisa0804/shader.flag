@@ -18,4 +18,5 @@ export default {
     glsl(),
     // Restart server on static file change
   ],
+  base: "/",
 };
